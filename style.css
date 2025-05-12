@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background: #80808029;
+}
+
+.limitar-secao {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+}
+
+header div, .cabecalho-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+header img {
+    width: 25px;
+    height: 25px;
+}
+
+header h1 {
+    font-size: 20px;
+    color: #5d15d1;
+}
+
+.secao-orcamento {
+    background-image: url('./imagens/bahia.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding: 25px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    width: 80%;
+    padding-bottom: 10px;
+}
+
+form div {
+    width: 50vh;
+}
+
+.cabecalho-form {
+    max-width: 100%;
+}
+
+input, button, select {
+    margin: 5px 0 15px 0;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+.container-dados, .container-ida div, .container-select div {
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho-form {
+    background-color: #5d15d1;
+    width: 100%;
+}
+
+.cabecalho-form {
+    padding: 5px 0;
+    color: #fff;
+}
+
+.cabecalho-form img {
+    transform: rotate(-30deg);
+    width: 20px;
+    height: 20px;
+}
+
+.cabecalho-form p {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+form h2 {
+    margin: 20px 0;
+}
+
+.container-checkbox div {
+    margin: 20px 0;
+}
+
+input, select {
+    padding: 5px 5px;
+}
+
+button {
+    border: none;
+    background: #5d15d1;
+    padding: 10px 0;
+    width: 90%;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.secao-ofertas figure {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.container-titulo {
+    text-align: left;
+    margin: 30px 0 5px 30px;
+    font-size: 15px;
+}
+
+.container-titulo h2, .container-titulo p {
+    margin: 5px 0;
+}
+
+.secao-ofertas img {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.secao-ofertas figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    background-color: #00000070;
+    width: 100%;
+    color: #fff;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.estilo-destaque {
+    font-weight: 600;
+}
+
+.secao-natureza figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.secao-natureza figcaption {
+    padding: 20px 10px;
+    margin-top: 5px;
+    background-color: #fff;
+    width: 100%;
+    line-height: 25px;
+}
+
+.secao-natureza img {
+    width: 100%;
+}
+
+footer {
+    background: #5d15d1;
+    padding: 40px 0;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    color: #fff;
+    margin: 0 auto;
+}
+
+footer img {
+    width: 15px;
+    height: 15px;
+}
+
+footer h3 {
+    margin: 5px 0;
+}
+
+.contato, .rede-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.contato div, .rede-social div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+ footer h3 {
+    padding: 10px 0;
+}
+
+@media (min-width: 769px) {
+
+    form div {
+        width: 90%;
+    }
+
+    .limitar-secao {
+        max-width: 1024px;
+    }
+
+    .container-titulo {
+        padding-left: 15px;
+    }
+
+    .container-ida, .container-select {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .container-ida div, .container-select div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-ida input {
+        width: 100%;
+    }
+
+    .checkbox-cama {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+    }
+
+    .container-checkbox div {
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    .container-checkbox label {
+        margin-left: 5px;
+    }
+
+    .checkbox-hospedagem {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container-footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    form div {
+        max-width: 90%;  
+    }
+
+    .limitar-secao {
+        max-width: 1200px;
+    }
+
+    .galeria-ofertas {
+        display: flex;
+        width: 100%;
+        height: 400px;
+        gap: 10px;
+    }
+
+    .container-titulo {
+        margin: 20px 0 5px 0;
+    }
+
+    .imagem-destaque {
+        width: 50%;
+        height: 100%;
+        position: relative;
+    }
+
+    .imagem-destaque figure {
+        width: 100%;
+    }
+
+    .imagem-destaque img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .imagem-menores {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        height: 100%;
+        gap: 10px;
+    }
+
+    .imagem-menores figure {
+        width: calc(50% - 5px);
+        height: calc(50% - 5px);
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .imagem-menores img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .galeria-natureza {
+        display: flex;  
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .galeria-natureza figure {
+        max-width: 800px;
+        width: 100%;
+    }
+}
